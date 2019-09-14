@@ -1,0 +1,171 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0x28950ef1, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0xacfa5975, __VMLINUX_SYMBOL_STR(kmem_cache_destroy) },
+	{ 0x98ab5c8d, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
+	{ 0x65e75cb6, __VMLINUX_SYMBOL_STR(__list_del_entry) },
+	{ 0xd2b09ce5, __VMLINUX_SYMBOL_STR(__kmalloc) },
+	{ 0x1ed8b599, __VMLINUX_SYMBOL_STR(__x86_indirect_thunk_r8) },
+	{ 0x4c4fef19, __VMLINUX_SYMBOL_STR(kernel_stack) },
+	{ 0xd6ee688f, __VMLINUX_SYMBOL_STR(vmalloc) },
+	{ 0x848fdfcb, __VMLINUX_SYMBOL_STR(crypto_alloc_shash) },
+	{ 0x784213a6, __VMLINUX_SYMBOL_STR(pv_lock_ops) },
+	{ 0x349cba85, __VMLINUX_SYMBOL_STR(strchr) },
+	{ 0x4b7dcf38, __VMLINUX_SYMBOL_STR(_raw_qspin_lock) },
+	{ 0xd705b4c7, __VMLINUX_SYMBOL_STR(schedule_hrtimeout) },
+	{ 0xa0fbac79, __VMLINUX_SYMBOL_STR(wake_up_bit) },
+	{ 0x754d539c, __VMLINUX_SYMBOL_STR(strlen) },
+	{ 0x538c1e7c, __VMLINUX_SYMBOL_STR(bmap) },
+	{ 0x992da34b, __VMLINUX_SYMBOL_STR(filemap_fdatawait) },
+	{ 0x64999478, __VMLINUX_SYMBOL_STR(congestion_wait) },
+	{ 0x257f3887, __VMLINUX_SYMBOL_STR(seq_open) },
+	{ 0x40c90b9d, __VMLINUX_SYMBOL_STR(end_buffer_write_sync) },
+	{ 0xc8b57c27, __VMLINUX_SYMBOL_STR(autoremove_wake_function) },
+	{ 0x34184afe, __VMLINUX_SYMBOL_STR(current_kernel_time) },
+	{ 0x6f715d0f, __VMLINUX_SYMBOL_STR(blkdev_issue_flush) },
+	{ 0x7ab88a45, __VMLINUX_SYMBOL_STR(system_freezing_cnt) },
+	{ 0x9b0c8220, __VMLINUX_SYMBOL_STR(_raw_read_lock) },
+	{ 0xf16169f8, __VMLINUX_SYMBOL_STR(ll_rw_block) },
+	{ 0x3da636f6, __VMLINUX_SYMBOL_STR(__lock_buffer) },
+	{ 0xdf566a59, __VMLINUX_SYMBOL_STR(__x86_indirect_thunk_r9) },
+	{ 0x74df1d4, __VMLINUX_SYMBOL_STR(seq_printf) },
+	{ 0xc87c1f84, __VMLINUX_SYMBOL_STR(ktime_get) },
+	{ 0xa16aae11, __VMLINUX_SYMBOL_STR(remove_proc_entry) },
+	{ 0xc29957c3, __VMLINUX_SYMBOL_STR(__x86_indirect_thunk_rcx) },
+	{ 0x593a99b, __VMLINUX_SYMBOL_STR(init_timer_key) },
+	{ 0x9621849f, __VMLINUX_SYMBOL_STR(ring_buffer_event_data) },
+	{ 0x4ed12f73, __VMLINUX_SYMBOL_STR(mutex_unlock) },
+	{ 0x999e8297, __VMLINUX_SYMBOL_STR(vfree) },
+	{ 0x912b5f0b, __VMLINUX_SYMBOL_STR(filter_current_check_discard) },
+	{ 0xe62cbe6d, __VMLINUX_SYMBOL_STR(unlock_buffer) },
+	{ 0x97651e6c, __VMLINUX_SYMBOL_STR(vmemmap_base) },
+	{ 0x91715312, __VMLINUX_SYMBOL_STR(sprintf) },
+	{ 0x9c3df9b4, __VMLINUX_SYMBOL_STR(seq_read) },
+	{ 0xc35e4b4e, __VMLINUX_SYMBOL_STR(kthread_create_on_node) },
+	{ 0xb7125089, __VMLINUX_SYMBOL_STR(wake_bit_function_rh) },
+	{ 0x7d11c268, __VMLINUX_SYMBOL_STR(jiffies) },
+	{ 0x343a1a8, __VMLINUX_SYMBOL_STR(__list_add) },
+	{ 0xd5b8a6ca, __VMLINUX_SYMBOL_STR(set_bh_page) },
+	{ 0xf432dd3d, __VMLINUX_SYMBOL_STR(__init_waitqueue_head) },
+	{ 0x44f0d59d, __VMLINUX_SYMBOL_STR(PDE_DATA) },
+	{ 0xd5f2172f, __VMLINUX_SYMBOL_STR(del_timer_sync) },
+	{ 0xa0b5b192, __VMLINUX_SYMBOL_STR(trace_event_buffer_lock_reserve) },
+	{ 0xe2253bd7, __VMLINUX_SYMBOL_STR(trace_define_field) },
+	{ 0x7e526bfa, __VMLINUX_SYMBOL_STR(__x86_indirect_thunk_r10) },
+	{ 0xfb578fc5, __VMLINUX_SYMBOL_STR(memset) },
+	{ 0x73839c7a, __VMLINUX_SYMBOL_STR(proc_mkdir) },
+	{ 0xb8c7ff88, __VMLINUX_SYMBOL_STR(current_task) },
+	{ 0xfed6e3f3, __VMLINUX_SYMBOL_STR(freezing_slow_path) },
+	{ 0x37befc70, __VMLINUX_SYMBOL_STR(jiffies_to_msecs) },
+	{ 0x9a025cd5, __VMLINUX_SYMBOL_STR(__mutex_init) },
+	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
+	{ 0x2ecd3315, __VMLINUX_SYMBOL_STR(crypto_shash_update) },
+	{ 0x8a8208fb, __VMLINUX_SYMBOL_STR(generic_writepages) },
+	{ 0x4c9d28b0, __VMLINUX_SYMBOL_STR(phys_base) },
+	{ 0xa1c76e0a, __VMLINUX_SYMBOL_STR(_cond_resched) },
+	{ 0x19ee3d71, __VMLINUX_SYMBOL_STR(kmem_cache_free) },
+	{ 0x16305289, __VMLINUX_SYMBOL_STR(warn_slowpath_null) },
+	{ 0x9abdea30, __VMLINUX_SYMBOL_STR(mutex_lock) },
+	{ 0x40ccf25c, __VMLINUX_SYMBOL_STR(__wait_on_buffer) },
+	{ 0x13a1a61a, __VMLINUX_SYMBOL_STR(_raw_write_lock) },
+	{ 0x521445b, __VMLINUX_SYMBOL_STR(list_del) },
+	{ 0x6343a556, __VMLINUX_SYMBOL_STR(get_zone_device_page) },
+	{ 0xbe2c0274, __VMLINUX_SYMBOL_STR(add_timer) },
+	{ 0x5de75127, __VMLINUX_SYMBOL_STR(unlock_page) },
+	{ 0x3de2640, __VMLINUX_SYMBOL_STR(perf_trace_run_bpf_submit) },
+	{ 0xadd2aceb, __VMLINUX_SYMBOL_STR(__get_page_tail) },
+	{ 0x872fc991, __VMLINUX_SYMBOL_STR(__brelse) },
+	{ 0x58e3306d, __VMLINUX_SYMBOL_STR(bit_wait_io) },
+	{ 0xbbfcaca5, __VMLINUX_SYMBOL_STR(bit_waitqueue) },
+	{ 0x5f31288f, __VMLINUX_SYMBOL_STR(ftrace_event_reg) },
+	{ 0x7cd8d75e, __VMLINUX_SYMBOL_STR(page_offset_base) },
+	{ 0xe2cfb038, __VMLINUX_SYMBOL_STR(__cond_resched_lock) },
+	{ 0xce900af, __VMLINUX_SYMBOL_STR(blk_finish_plug) },
+	{ 0xd11b7a3e, __VMLINUX_SYMBOL_STR(kmem_cache_alloc) },
+	{ 0x78764f4e, __VMLINUX_SYMBOL_STR(pv_irq_ops) },
+	{ 0xb601be4c, __VMLINUX_SYMBOL_STR(__x86_indirect_thunk_rdx) },
+	{ 0x17bbee98, __VMLINUX_SYMBOL_STR(free_buffer_head) },
+	{ 0x8f619a88, __VMLINUX_SYMBOL_STR(bdevname) },
+	{ 0x89711fae, __VMLINUX_SYMBOL_STR(sync_blockdev) },
+	{ 0x27b252f3, __VMLINUX_SYMBOL_STR(try_to_free_buffers) },
+	{ 0x93fca811, __VMLINUX_SYMBOL_STR(__get_free_pages) },
+	{ 0xf0fdf6cb, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
+	{ 0x1000e51, __VMLINUX_SYMBOL_STR(schedule) },
+	{ 0x155f4108, __VMLINUX_SYMBOL_STR(___ratelimit) },
+	{ 0x2ea2c95c, __VMLINUX_SYMBOL_STR(__x86_indirect_thunk_rax) },
+	{ 0xbfdcb43a, __VMLINUX_SYMBOL_STR(__x86_indirect_thunk_r11) },
+	{ 0x4482cdb, __VMLINUX_SYMBOL_STR(__refrigerator) },
+	{ 0x8f944a92, __VMLINUX_SYMBOL_STR(crypto_destroy_tfm) },
+	{ 0x50fad434, __VMLINUX_SYMBOL_STR(round_jiffies_up) },
+	{ 0x52b645e5, __VMLINUX_SYMBOL_STR(__smp_mb__after_atomic) },
+	{ 0xe65cdceb, __VMLINUX_SYMBOL_STR(wake_up_process) },
+	{ 0xb716129b, __VMLINUX_SYMBOL_STR(alloc_buffer_head) },
+	{ 0xbdfb6dbb, __VMLINUX_SYMBOL_STR(__fentry__) },
+	{ 0xce5c93e3, __VMLINUX_SYMBOL_STR(submit_bh) },
+	{ 0x41ec4c1a, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
+	{ 0x384e70ae, __VMLINUX_SYMBOL_STR(__smp_mb__before_atomic) },
+	{ 0xaf5517a9, __VMLINUX_SYMBOL_STR(kmem_cache_create) },
+	{ 0x4302d0eb, __VMLINUX_SYMBOL_STR(free_pages) },
+	{ 0xcf21d241, __VMLINUX_SYMBOL_STR(__wake_up) },
+	{ 0xe8a73aaf, __VMLINUX_SYMBOL_STR(out_of_line_wait_on_bit) },
+	{ 0x8c34c149, __VMLINUX_SYMBOL_STR(proc_create_data) },
+	{ 0x1e047854, __VMLINUX_SYMBOL_STR(warn_slowpath_fmt) },
+	{ 0x1685c91c, __VMLINUX_SYMBOL_STR(seq_lseek) },
+	{ 0xe644f4ea, __VMLINUX_SYMBOL_STR(iput) },
+	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
+	{ 0x69acdf38, __VMLINUX_SYMBOL_STR(memcpy) },
+	{ 0x71995c4e, __VMLINUX_SYMBOL_STR(trace_event_raw_init) },
+	{ 0xa400159f, __VMLINUX_SYMBOL_STR(crc32_be) },
+	{ 0x5c8b5ce8, __VMLINUX_SYMBOL_STR(prepare_to_wait) },
+	{ 0x9e61bb05, __VMLINUX_SYMBOL_STR(set_freezable) },
+	{ 0x42bb8d80, __VMLINUX_SYMBOL_STR(perf_trace_buf_prepare) },
+	{ 0xf9d26784, __VMLINUX_SYMBOL_STR(write_dirty_buffer) },
+	{ 0x7628f3c7, __VMLINUX_SYMBOL_STR(this_cpu_off) },
+	{ 0x334c1f75, __VMLINUX_SYMBOL_STR(put_page) },
+	{ 0xab9ea056, __VMLINUX_SYMBOL_STR(__bforget) },
+	{ 0xfa66f77c, __VMLINUX_SYMBOL_STR(finish_wait) },
+	{ 0x43706ef3, __VMLINUX_SYMBOL_STR(filemap_fdatawrite_range) },
+	{ 0xa04a9b5d, __VMLINUX_SYMBOL_STR(__find_get_block) },
+	{ 0x5e14c0ee, __VMLINUX_SYMBOL_STR(mark_buffer_dirty) },
+	{ 0x4f897611, __VMLINUX_SYMBOL_STR(seq_release) },
+	{ 0x1e3a88fb, __VMLINUX_SYMBOL_STR(trace_seq_printf) },
+	{ 0xbf3dbf85, __VMLINUX_SYMBOL_STR(__getblk) },
+	{ 0x925520d2, __VMLINUX_SYMBOL_STR(blk_start_plug) },
+	{ 0x4b55313f, __VMLINUX_SYMBOL_STR(ftrace_raw_output_prep) },
+	{ 0x498d293a, __VMLINUX_SYMBOL_STR(trace_buffer_unlock_commit) },
+	{ 0x760a0f4f, __VMLINUX_SYMBOL_STR(yield) },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=";
+
+
+MODULE_INFO(srcversion, "B1CB96A71382CB57656416D");
+MODULE_INFO(rhelversion, "7.7");
+#ifdef RETPOLINE
+	MODULE_INFO(retpoline, "Y");
+#endif
+#ifdef CONFIG_MPROFILE_KERNEL
+	MODULE_INFO(mprofile, "Y");
+#endif

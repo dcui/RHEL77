@@ -1,0 +1,173 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0x28950ef1, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0xf3017e21, __VMLINUX_SYMBOL_STR(dccp_statistics) },
+	{ 0xabac8095, __VMLINUX_SYMBOL_STR(dccp_init_sock) },
+	{ 0xa91296bd, __VMLINUX_SYMBOL_STR(__kfree_skb) },
+	{ 0xba55e93c, __VMLINUX_SYMBOL_STR(dccp_v4_do_rcv) },
+	{ 0xeff83af5, __VMLINUX_SYMBOL_STR(inet6_csk_update_pmtu) },
+	{ 0x784213a6, __VMLINUX_SYMBOL_STR(pv_lock_ops) },
+	{ 0x81acfa5f, __VMLINUX_SYMBOL_STR(dccp_set_state) },
+	{ 0x4b7dcf38, __VMLINUX_SYMBOL_STR(_raw_qspin_lock) },
+	{ 0x8e5f1a9f, __VMLINUX_SYMBOL_STR(inet6_csk_bind_conflict) },
+	{ 0x7e46fe9f, __VMLINUX_SYMBOL_STR(ipv6_getsockopt) },
+	{ 0x37abdd1e, __VMLINUX_SYMBOL_STR(inet_unhash) },
+	{ 0xd200cce8, __VMLINUX_SYMBOL_STR(inet_twsk_put) },
+	{ 0x7d5a91c1, __VMLINUX_SYMBOL_STR(dccp_hashinfo) },
+	{ 0x9f8e0c16, __VMLINUX_SYMBOL_STR(inet6_add_protocol) },
+	{ 0x1763da83, __VMLINUX_SYMBOL_STR(inet6_lookup_listener) },
+	{ 0xccb337de, __VMLINUX_SYMBOL_STR(dccp_sendmsg) },
+	{ 0x9068d7a2, __VMLINUX_SYMBOL_STR(ipv6_opt_accepted) },
+	{ 0x91625ebc, __VMLINUX_SYMBOL_STR(compat_ipv6_getsockopt) },
+	{ 0x31f61560, __VMLINUX_SYMBOL_STR(sk_setup_caps) },
+	{ 0x59aa36d3, __VMLINUX_SYMBOL_STR(dccp_ctl_make_reset) },
+	{ 0x35c54e19, __VMLINUX_SYMBOL_STR(dccp_destroy_sock) },
+	{ 0xa24d5253, __VMLINUX_SYMBOL_STR(dccp_make_response) },
+	{ 0x9d633750, __VMLINUX_SYMBOL_STR(dst_release) },
+	{ 0x8b4e1a6, __VMLINUX_SYMBOL_STR(skb_clone) },
+	{ 0xbbcc54a5, __VMLINUX_SYMBOL_STR(dccp_rcv_established) },
+	{ 0xe9156103, __VMLINUX_SYMBOL_STR(inet6_csk_search_req) },
+	{ 0xd78e6f89, __VMLINUX_SYMBOL_STR(security_skb_classify_flow) },
+	{ 0x69b64669, __VMLINUX_SYMBOL_STR(dccp_v4_conn_request) },
+	{ 0xc29957c3, __VMLINUX_SYMBOL_STR(__x86_indirect_thunk_rcx) },
+	{ 0xd676d38a, __VMLINUX_SYMBOL_STR(inet_csk_prepare_forced_close) },
+	{ 0xea0155bd, __VMLINUX_SYMBOL_STR(dccp_create_openreq_child) },
+	{ 0xb0c81f08, __VMLINUX_SYMBOL_STR(ipv6_dup_options) },
+	{ 0xf64d999f, __VMLINUX_SYMBOL_STR(dccp_check_req) },
+	{ 0xfd94c430, __VMLINUX_SYMBOL_STR(inet_sendmsg) },
+	{ 0xc6b3bcad, __VMLINUX_SYMBOL_STR(inet6_release) },
+	{ 0xb0d888b, __VMLINUX_SYMBOL_STR(icmpv6_err_convert) },
+	{ 0x1aab4450, __VMLINUX_SYMBOL_STR(inet6_register_protosw) },
+	{ 0xe54bbe3e, __VMLINUX_SYMBOL_STR(dccp_recvmsg) },
+	{ 0x32c3baaa, __VMLINUX_SYMBOL_STR(ip6_xmit) },
+	{ 0xb1ddf4a8, __VMLINUX_SYMBOL_STR(inet_sk_rebuild_header) },
+	{ 0xe34fd66e, __VMLINUX_SYMBOL_STR(inet6_getname) },
+	{ 0x2e041e80, __VMLINUX_SYMBOL_STR(sock_rfree) },
+	{ 0xa05d47af, __VMLINUX_SYMBOL_STR(inet6_csk_xmit) },
+	{ 0x2a60c85b, __VMLINUX_SYMBOL_STR(__inet6_hash) },
+	{ 0xf04e7ba1, __VMLINUX_SYMBOL_STR(dccp_ioctl) },
+	{ 0x3f52db10, __VMLINUX_SYMBOL_STR(compat_sock_common_setsockopt) },
+	{ 0x742759d5, __VMLINUX_SYMBOL_STR(dccp_setsockopt) },
+	{ 0x1855a8b6, __VMLINUX_SYMBOL_STR(sock_common_recvmsg) },
+	{ 0x27c33efe, __VMLINUX_SYMBOL_STR(csum_ipv6_magic) },
+	{ 0x4bba392, __VMLINUX_SYMBOL_STR(sock_no_sendpage) },
+	{ 0xf107b6b6, __VMLINUX_SYMBOL_STR(dccp_child_process) },
+	{ 0x4f98b64e, __VMLINUX_SYMBOL_STR(sock_no_mmap) },
+	{ 0xf8133038, __VMLINUX_SYMBOL_STR(compat_sock_common_getsockopt) },
+	{ 0x5a69a0c9, __VMLINUX_SYMBOL_STR(sock_no_socketpair) },
+	{ 0x1a0bbcc5, __VMLINUX_SYMBOL_STR(skb_checksum) },
+	{ 0xce61f43c, __VMLINUX_SYMBOL_STR(ip6_dst_lookup_flow) },
+	{ 0xf6c6637d, __VMLINUX_SYMBOL_STR(unregister_pernet_subsys) },
+	{ 0xc25df6ef, __VMLINUX_SYMBOL_STR(__inet6_lookup_established) },
+	{ 0x734f5485, __VMLINUX_SYMBOL_STR(dccp_v4_request_recv_sock) },
+	{ 0xa1bf9e1a, __VMLINUX_SYMBOL_STR(dccp_parse_options) },
+	{ 0x233e63f9, __VMLINUX_SYMBOL_STR(compat_dccp_setsockopt) },
+	{ 0xc303451a, __VMLINUX_SYMBOL_STR(dccp_getsockopt) },
+	{ 0x2a00fcd4, __VMLINUX_SYMBOL_STR(inet6_csk_reqsk_queue_hash_add) },
+	{ 0x2deda4a1, __VMLINUX_SYMBOL_STR(security_sk_classify_flow) },
+	{ 0x331b7bf, __VMLINUX_SYMBOL_STR(inet6_ioctl) },
+	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
+	{ 0x75ecd141, __VMLINUX_SYMBOL_STR(inet_csk_delete_keepalive_timer) },
+	{ 0x46ad1c0b, __VMLINUX_SYMBOL_STR(fl6_sock_lookup) },
+	{ 0x73510609, __VMLINUX_SYMBOL_STR(fl6_update_dst) },
+	{ 0x19ee3d71, __VMLINUX_SYMBOL_STR(kmem_cache_free) },
+	{ 0x16305289, __VMLINUX_SYMBOL_STR(warn_slowpath_null) },
+	{ 0x13a1a61a, __VMLINUX_SYMBOL_STR(_raw_write_lock) },
+	{ 0xf6d9a71d, __VMLINUX_SYMBOL_STR(dccp_reqsk_init) },
+	{ 0x76d3ab1a, __VMLINUX_SYMBOL_STR(dccp_close) },
+	{ 0x788e4e94, __VMLINUX_SYMBOL_STR(sk_free) },
+	{ 0x5e3930ed, __VMLINUX_SYMBOL_STR(inet_shutdown) },
+	{ 0xe3691b9d, __VMLINUX_SYMBOL_STR(dccp_orphan_count) },
+	{ 0xdd18cc69, __VMLINUX_SYMBOL_STR(dccp_sync_mss) },
+	{ 0xa20ce1b8, __VMLINUX_SYMBOL_STR(net_msg_warn) },
+	{ 0x6fea2888, __VMLINUX_SYMBOL_STR(inet6_hash_connect) },
+	{ 0xdadd8e, __VMLINUX_SYMBOL_STR(inet_accept) },
+	{ 0x1b6caa7a, __VMLINUX_SYMBOL_STR(sk_filter_trim_cap) },
+	{ 0x4ba8d2a0, __VMLINUX_SYMBOL_STR(inet_csk_get_port) },
+	{ 0x9c2bda90, __VMLINUX_SYMBOL_STR(dccp_death_row) },
+	{ 0x6c698806, __VMLINUX_SYMBOL_STR(inet_ctl_sock_create) },
+	{ 0xac32a854, __VMLINUX_SYMBOL_STR(dccp_poll) },
+	{ 0xf41f64b, __VMLINUX_SYMBOL_STR(inet_hash) },
+	{ 0x3ff62317, __VMLINUX_SYMBOL_STR(local_bh_disable) },
+	{ 0xc8a07495, __VMLINUX_SYMBOL_STR(proto_register) },
+	{ 0xb2fe428, __VMLINUX_SYMBOL_STR(dccp_disconnect) },
+	{ 0xd11b7a3e, __VMLINUX_SYMBOL_STR(kmem_cache_alloc) },
+	{ 0xcc1e33d2, __VMLINUX_SYMBOL_STR(__sk_dst_check) },
+	{ 0x1903c5be, __VMLINUX_SYMBOL_STR(dccp_done) },
+	{ 0x23a81d09, __VMLINUX_SYMBOL_STR(sk_release_kernel) },
+	{ 0xf0fdf6cb, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
+	{ 0x19d16d0, __VMLINUX_SYMBOL_STR(dccp_v4_send_check) },
+	{ 0xab18ae92, __VMLINUX_SYMBOL_STR(kfree_skb) },
+	{ 0xc7204b40, __VMLINUX_SYMBOL_STR(proto_unregister) },
+	{ 0xdf288732, __VMLINUX_SYMBOL_STR(inet_stream_connect) },
+	{ 0x3285c21, __VMLINUX_SYMBOL_STR(dccp_invalid_packet) },
+	{ 0x799aca4, __VMLINUX_SYMBOL_STR(local_bh_enable) },
+	{ 0xa63b5132, __VMLINUX_SYMBOL_STR(inet6_del_protocol) },
+	{ 0x2ea2c95c, __VMLINUX_SYMBOL_STR(__x86_indirect_thunk_rax) },
+	{ 0x7679e2bb, __VMLINUX_SYMBOL_STR(register_pernet_subsys) },
+	{ 0xbdfb6dbb, __VMLINUX_SYMBOL_STR(__fentry__) },
+	{ 0xcc1acedc, __VMLINUX_SYMBOL_STR(inet6_lookup) },
+	{ 0x4cdd391d, __VMLINUX_SYMBOL_STR(dccp_feat_list_purge) },
+	{ 0xe61b036c, __VMLINUX_SYMBOL_STR(dccp_syn_ack_timeout) },
+	{ 0x64e676bf, __VMLINUX_SYMBOL_STR(sk_receive_skb) },
+	{ 0xce375ff4, __VMLINUX_SYMBOL_STR(compat_dccp_getsockopt) },
+	{ 0xa7dacdd9, __VMLINUX_SYMBOL_STR(ipv6_setsockopt) },
+	{ 0xf6ebc03b, __VMLINUX_SYMBOL_STR(net_ratelimit) },
+	{ 0x4ad0de07, __VMLINUX_SYMBOL_STR(sock_common_setsockopt) },
+	{ 0xc523050e, __VMLINUX_SYMBOL_STR(inet6_sk_rebuild_header) },
+	{ 0x7cc77177, __VMLINUX_SYMBOL_STR(__xfrm_policy_check) },
+	{ 0xae729e59, __VMLINUX_SYMBOL_STR(security_req_classify_flow) },
+	{ 0xe1761617, __VMLINUX_SYMBOL_STR(security_inet_conn_request) },
+	{ 0xe47815ab, __VMLINUX_SYMBOL_STR(inet_dccp_listen) },
+	{ 0xee62b44f, __VMLINUX_SYMBOL_STR(__inet_inherit_port) },
+	{ 0x5e040787, __VMLINUX_SYMBOL_STR(sock_common_getsockopt) },
+	{ 0xe200f872, __VMLINUX_SYMBOL_STR(secure_dccpv6_sequence_number) },
+	{ 0xc52d2545, __VMLINUX_SYMBOL_STR(inet6_unregister_protosw) },
+	{ 0x73141445, __VMLINUX_SYMBOL_STR(inet_csk_accept) },
+	{ 0x737d7c0d, __VMLINUX_SYMBOL_STR(inet6_bind) },
+	{ 0xd3303bd5, __VMLINUX_SYMBOL_STR(dccp_reqsk_send_ack) },
+	{ 0x3461ea86, __VMLINUX_SYMBOL_STR(dccp_rcv_state_process) },
+	{ 0x81553ad8, __VMLINUX_SYMBOL_STR(consume_skb) },
+	{ 0x8c1d11ea, __VMLINUX_SYMBOL_STR(dccp_connect) },
+	{ 0x273e3c92, __VMLINUX_SYMBOL_STR(dccp_shutdown) },
+	{ 0xb2c04a93, __VMLINUX_SYMBOL_STR(ip_queue_xmit) },
+	{ 0x282d5891, __VMLINUX_SYMBOL_STR(dccp_v4_connect) },
+	{ 0xd542439, __VMLINUX_SYMBOL_STR(__ipv6_addr_type) },
+	{ 0x35ba3e25, __VMLINUX_SYMBOL_STR(inet6_csk_addr2sockaddr) },
+	{ 0xface279c, __VMLINUX_SYMBOL_STR(compat_ipv6_setsockopt) },
+	{ 0xf4f32209, __VMLINUX_SYMBOL_STR(inet6_destroy_sock) },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=dccp,dccp_ipv4";
+
+
+MODULE_INFO(srcversion, "228B91E561DF01135F641E3");
+MODULE_INFO(rhelversion, "7.7");
+#ifdef RETPOLINE
+	MODULE_INFO(retpoline, "Y");
+#endif
+#ifdef CONFIG_MPROFILE_KERNEL
+	MODULE_INFO(mprofile, "Y");
+#endif
